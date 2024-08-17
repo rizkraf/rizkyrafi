@@ -30,16 +30,16 @@ export const { getStaticPaths, GET } = OGImageRoute({
     bgGradient: [[11, 40, 35]],
     font: {
       title: {
-        families: ['Inter'],
+        families: ['Montserrat'],
         color: [238, 239, 233],
       },
       description: {
-        families: ['Inter'],
+        families: ['Montserrat'],
         color: [238, 239, 233],
       },
     },
     border: {
-      color: [127, 128, 140],
+      color: [127, 188, 140],
       width: 50,
       side: 'inline-start',
     },
