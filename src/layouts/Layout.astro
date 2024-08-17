@@ -12,6 +12,8 @@ import '@fontsource/montserrat/500.css';
 import { ViewTransitions } from 'astro:transitions';
 import { SEO } from 'astro-seo';
 const ogImage = `${Astro.site?.origin}/og/${pathname.split('/')[1]}.png`;
+import '@/styles/globals.css';
+import ThemeHeadScript from '@/components/theme-head-script.astro';
 ---
 
 <!doctype html>
@@ -24,8 +26,7 @@ const ogImage = `${Astro.site?.origin}/og/${pathname.split('/')[1]}.png`;
         basic: {
           title: title,
           type: 'website',
-          image:
-            ogImage,
+          image: ogImage,
         },
       }}
       extend={{
@@ -65,8 +66,7 @@ const ogImage = `${Astro.site?.origin}/og/${pathname.split('/')[1]}.png`;
           },
           {
             name: 'og:image',
-            content:
-            ogImage,
+            content: ogImage,
           },
           {
             name: 'og:description',
@@ -95,17 +95,17 @@ const ogImage = `${Astro.site?.origin}/og/${pathname.split('/')[1]}.png`;
           },
           {
             name: 'twitter:image',
-            content:
-            ogImage,
+            content: ogImage,
           },
         ],
       }}
     />
     <ViewTransitions />
+    <ThemeHeadScript />
   </head>
-  <body class="font-montserrat">
+  <body class="font-montserrat dark:bg-darkBg">
     <Header client:load path={pathname} />
-    <div class="mx-auto w-[750px] max-w-full px-5 pb-10 pt-28">
+    <div class="text-text dark:text-darkText mx-auto w-[750px] max-w-full px-5 pb-10 pt-28">
       <slot />
     </div>
   </body>

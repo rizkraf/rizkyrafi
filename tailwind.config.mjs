@@ -8,15 +8,20 @@ export default {
   theme: {
     extend: {
       colors: {
-        main: '#88aaee',
-        overlay: 'rgba(0,0,0,0.8)',
-        bg: '#dfe5f2',
+        main: '#7fbc8c',
+        mainAccent: '#58a769', // not needed for shadcn components
+        overlay: 'rgba(0,0,0,0.8)', // background color overlay for alert dialogs, modals, etc.
+
+        // light mode
+        bg: '#daf5f0',
         text: '#000',
         border: '#000',
-        darkBg: '#272933',
+
+        // dark mode
+        darkBg: '#0b2823',
         darkText: '#eeefe9',
         darkBorder: '#000',
-        secondaryBlack: '#1b1b1b',
+        secondaryBlack: '#1b1b1b', // opposite of plain white, not used pitch black because borders and box-shadows are that color
       },
       borderRadius: {
         base: '5px',
