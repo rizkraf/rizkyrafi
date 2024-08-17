@@ -8,7 +8,7 @@ import Header from '@/components/Header.tsx';
 
 const url = new URL(Astro.request.url);
 const pathname = url.pathname;
-import '@fontsource/montserrat';
+import '@fontsource/montserrat/500.css';
 import { ViewTransitions } from 'astro:transitions';
 import { SEO } from 'astro-seo';
 const ogImage = `${Astro.site?.origin}/og/${pathname.split('/')[1]}.png`;

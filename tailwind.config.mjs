@@ -1,4 +1,4 @@
-import defaultTheme from 'tailwindcss/defaultTheme'
+import defaultTheme from 'tailwindcss/defaultTheme';
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -8,14 +8,22 @@ export default {
   theme: {
     extend: {
       colors: {
-        bg: '#dfe5f2',
         main: '#88aaee',
+        overlay: 'rgba(0,0,0,0.8)',
+        bg: '#dfe5f2',
+        text: '#000',
+        border: '#000',
+        darkBg: '#272933',
+        darkText: '#eeefe9',
+        darkBorder: '#000',
+        secondaryBlack: '#1b1b1b',
       },
       borderRadius: {
         base: '5px',
       },
       boxShadow: {
-        base: '4px 4px 0px 0px rgba(0,0,0,1)',
+        light: '4px 4px 0px 0px #000',
+        dark: '4px 4px 0px 0px #000',
       },
       translate: {
         boxShadowX: '4px',
