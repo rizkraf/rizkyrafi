@@ -10,15 +10,15 @@ export const { getStaticPaths, GET } = OGImageRoute({
   // In this example, we generate one image at `/open-graph/example.png`.
   pages: {
     '': {
-      title: 'Home - Rizky Rafi',
+      title: 'Rizky Rafi Azhara',
       description: 'Home page',
     },
     work: {
-      title: 'Work - Rizky Rafi',
+      title: 'Work | Rizky Rafi Azhara',
       description: 'Work page',
     },
     about: {
-      title: 'About - Rizky Rafi',
+      title: 'About | Rizky Rafi Azhara',
       description: 'About page',
     },
   },
