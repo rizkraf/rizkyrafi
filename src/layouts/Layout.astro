@@ -12,7 +12,6 @@ import '@fontsource/montserrat/500.css';
 import { ViewTransitions } from 'astro:transitions';
 import { SEO } from 'astro-seo';
 const ogImage = `${Astro.site?.origin}/og/${pathname.split('/')[1]}.png`;
-import  SpeedInsights  from "@vercel/speed-insights/astro"
 ---
 
 <!doctype html>
@@ -109,6 +108,5 @@ import  SpeedInsights  from "@vercel/speed-insights/astro"
     <div class="mx-auto w-[750px] max-w-full px-5 pb-10 pt-28">
       <slot />
     </div>
-    <SpeedInsights />
   </body>
 </html>
