@@ -103,12 +103,12 @@ import  SpeedInsights  from "@vercel/speed-insights/astro"
       }}
     />
     <ViewTransitions />
-    <SpeedInsights />
   </head>
   <body class="font-montserrat">
     <Header client:load path={pathname} />
     <div class="mx-auto w-[750px] max-w-full px-5 pb-10 pt-28">
       <slot />
     </div>
+    <SpeedInsights />
   </body>
 </html>
