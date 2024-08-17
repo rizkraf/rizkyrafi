@@ -22,11 +22,10 @@ import { Image } from 'astro:assets';
                   class="w-full h-full rounded-base"
                   src={project.previewImage}
                   alt={project.name}
-                  widths={[240, 540, 720, project.previewImage.width]}
-                  format='webp'
-                  sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${project.previewImage.width}px`}
+                  widths={[240, 540, 720]}
+                  sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px`}
                   loading="eager"
-                  quality={80}
+                  inferSize={true}
                 />
               </AspectRatio>
 

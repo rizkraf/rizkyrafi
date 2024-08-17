@@ -23,4 +23,7 @@ export default defineConfig({
   },
   output: 'static',
   adapter: vercel(),
+  image: {
+    domains: ["seryrzlikbdsaklwhqhw.supabase.co"],
+  }
 });
