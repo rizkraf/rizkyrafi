@@ -11,15 +11,15 @@ export const { getStaticPaths, GET } = OGImageRoute({
   pages: {
     '': {
       title: 'Home - Rizky Rafi',
-      description: 'This is my Home page',
+      description: 'Home page',
     },
     work: {
       title: 'Work - Rizky Rafi',
-      description: 'This is my Work page',
+      description: 'Work page',
     },
     about: {
       title: 'About - Rizky Rafi',
-      description: 'This is my About page',
+      description: 'About page',
     },
   },
 
@@ -27,20 +27,20 @@ export const { getStaticPaths, GET } = OGImageRoute({
   getImageOptions: (path, page) => ({
     title: page.title,
     description: page.description,
-    bgGradient: [[223, 229, 242]],
+    bgGradient: [[11, 40, 35]],
     font: {
       title: {
         families: ['Inter'],
-        color: [0, 0, 0],
+        color: [238, 239, 233],
       },
       description: {
         families: ['Inter'],
-        color: [0, 0, 0],
+        color: [238, 239, 233],
       },
     },
     border: {
-      color: [136, 170, 238],
-      width: 20,
+      color: [127, 128, 140],
+      width: 50,
       side: 'inline-start',
     },
   }),
